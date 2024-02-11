@@ -133,7 +133,7 @@ Create Access keys pair
 
     * ECR_REPOSITORY_NAME
 
-8. Make sure you uncomment contents of the file & upgate your AWS project name here: .github/workflows/mail.yaml line #95 "--name=YOUR_AWS_PROJECT_NAME"
+8. Make sure you uncomment contents of the file & upgate your AWS project name here: .github/workflows/mail.yaml line #94 "--name=YOUR_AWS_PROJECT_NAME"
 
 9. Trigger the CICD pipeline by doing the standard git workflow steps
 ```git add .```

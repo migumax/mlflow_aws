@@ -23,9 +23,10 @@ Project's name should be mlflow_aws
 5. Run the pipeline
 ```python3 main.py```
 
-6. Check out the experiment results run in your dagshub account
+6. Check out logs populating locally in logs/running_logs.log
 
-7. Check out logs populating locally in logs/running_logs.log
+7. Check out model's metrics in artifacts/model_evaluation/metrics.json
+Check out experiments' metrics in Cloud-based MLFlow
 
 8. Change parameters values in params.yaml & relaunch the experiment
 
@@ -90,12 +91,14 @@ export MLFLOW_TRACKING_PASSWORD=9cbae1b719fbb930f24346db8542134dec87fff6
 	* AmazonEC2ContainerRegistryFullAccess 
 	* AmazonEC2FullAccess
 
+Create Access keys pair
 	
-3. Create ECR repository to host our Docker image
+3. Create ECR repository to host our Docker image (use the same name)
     
 	- Input your ECR URI here for future use: 042386354197.dkr.ecr.eu-central-1.amazonaws.com/mlflow_aws
 
-4. Create a new EC2 machine (Ubuntu 22.04) 
+4. Create a new EC2 machine (Ubuntu 22.04, t2.large, 32GB SSD) 
+(use the same name as for everything else)
 
 5. Configure the machine by installing all the packages needed:
 

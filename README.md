@@ -150,3 +150,4 @@ Interact with the App to get predictions based on user's inputs
 
 12. Clean the resources in AWS not to get charged extra money! 
 
+
